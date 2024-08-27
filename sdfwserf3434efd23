@@ -45,7 +45,7 @@ local loop = heartbeat:Connect(function()
         local oldcf = root.CFrame
         local oldcamoffset = hum.CameraOffset
 
-        local newcf = oldcf * CFrame.new(0, 10, 0)
+        local newcf = oldcf * CFrame.new(10, 10, 10)
 
         hum.CameraOffset = newcf:ToObjectSpace(CFrame.new(oldcf.Position)).Position
         root.CFrame = newcf
